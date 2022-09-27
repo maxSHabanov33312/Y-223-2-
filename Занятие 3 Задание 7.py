@@ -3,3 +3,4 @@ def add(g):
         print("Да")
     else:
         print("Нет")
+add(g = int(input()))

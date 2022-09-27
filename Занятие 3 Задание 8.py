@@ -8,3 +8,4 @@ def add(a,b,c):
         else:
             d = 0
     print(d)
+add(a = int(input()), b = int(input()), c = int(input()))

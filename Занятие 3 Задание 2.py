@@ -1,3 +1,2 @@
-a = int(input())
-b = int(input())
-print(a*b/2)
+def add(a,b):
+    return a*b/2

@@ -4,3 +4,4 @@ def add(n,m,k):
         print("Да")
     else:
         print("Нет")
+add(n = int(input()), m = int(input()), k = int(input()))

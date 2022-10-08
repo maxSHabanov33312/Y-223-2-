@@ -1,0 +1,8 @@
+x = int(input('Введите целые неотрицательные числа, '
+              'для завершения введите 0:\n>> '))
+lst = [x]
+while x != 0:
+    lst.append(x)
+    x = int(input('>> '))
+s = sum(lst) // len(lst)
+print('Среднее занчение:', s)

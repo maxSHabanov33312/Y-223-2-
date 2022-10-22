@@ -1,7 +1,7 @@
-def Fubonacchi(N,K): #Нуждается в доработке
+def F(N,K):
     X = 0
     Z = 0
-    D = X
+    K = K - 1
     list = []
     a = 1
     y = 0
@@ -11,11 +11,10 @@ def Fubonacchi(N,K): #Нуждается в доработке
         y = b
         list.append(b)
     list.insert(0, 0)
-    print(list)
     for i in list:
         while K < N:
             Z = list[K]
             X += Z
-            K = K+i
+            K = K+1
     print(X)
-Fubonacchi(N = int(input()), K = int(input()))
+F(N = int(input()), K = int(input()))

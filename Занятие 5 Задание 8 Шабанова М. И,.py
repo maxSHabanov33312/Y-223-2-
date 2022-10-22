@@ -1,15 +1,15 @@
-def longest_same_sequence(s):    
-    lng,tmp = 1,1
-    
-    for i in range(len(s)-1,0,-1):
-        if s[i]==s[i-1]:
-            tmp += 1
-        else: 
-            if tmp > lng:
-                lng = tmp
-            tmp = 1
-    
-    if tmp > lng: 
-        lng = tmp        
-    
-    return lng
+def F(x):
+    y = -1
+    a_rep_len = 0
+    b_rep_len = 0
+    while x != 0:
+        if y == x:
+            a_rep_len += 1
+        else:
+            y = x
+            b_rep_len = max(b_rep_len, a_rep_len)
+            a_rep_len = 1
+        x = int(input())
+    b_rep_len = max(b_rep_len, a_rep_len)
+    print(b_rep_len)
+F(x = int(input()))

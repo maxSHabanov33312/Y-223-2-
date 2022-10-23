@@ -1,3 +1,5 @@
-a = input("Вводите строку" )
-print(a)
-print(a.split(sep='(' and sep==')'))
+def F(s):
+    import re
+    a = re.findall(r'\(.*?\)',s)
+    print(a)
+F(s = input("Введите текст: "))

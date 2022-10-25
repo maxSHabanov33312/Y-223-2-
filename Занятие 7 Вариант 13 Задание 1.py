@@ -7,9 +7,9 @@ def F(n):
         a.append(int(input()))
     print(a)
     for i, x in enumerate(a):
-        if x in a[:i]:
+        if a[x] == a[x + 1]:
             b.append(x)
             c.append(i)
     print(b)
     print(c)
-F(n = int(input("Введите длину массива ")))
+F(n = int(input("Введите длину массива" )))

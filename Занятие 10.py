@@ -2,7 +2,7 @@ import random
 def f():
     print("Задание 1")
     file = open('C:\\Users\\USER\\Desktop\\Шабанов_М_И_У-223_vvod.txt', 'r')
-    file2 = open('C:\\Users\\USER\\Desktop\\Шабанов_М_И_У-223_vivod1.txt', 'w')
+    file2 = open('C:\\Users\\USER\\Desktop\\Шабанов_М_И_У-223_vivod.txt', 'w')
     n = int(file.readline())
     m = int(file.readline())
     n = int(n)
@@ -24,7 +24,7 @@ f()
 def s():
     print("Задание 2")
     file = open('C:\\Users\\USER\\Desktop\\Шабанов_М_И_У-223_vvod.txt', 'r')
-    file2 = open('C:\\Users\\USER\\Desktop\\Шабанов_М_И_У-223_vivod1.txt', 'w')
+    file2 = open('C:\\Users\\USER\\Desktop\\Шабанов_М_И_У-223_vivod.txt', 'w')
     A = [[random.randrange(10) for i in range(5)] for j in range(5)]
     n = int(file.readline(A))
     for i, row in enumerate(A):

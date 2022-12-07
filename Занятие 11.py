@@ -1,7 +1,6 @@
 #Вариант 7 Репазиторий - Firehol IP Lists, ссылка - https://github.com/firehol/blocklist-ipsets
 import json
 import requests
-from tkinter import*
 def f(x):
     with open("C:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2022.18.2\\languages\\shabanov", "w") as file:
         user = "ktsaou"

@@ -2,7 +2,7 @@
 import json
 import requests
 def f(x):
-    with open("C:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2022.18.2\\languages\\shabanov", "w") as file:
+    with open("shabanov", "w") as file:
         user = "ktsaou"
         url = f"https://api.github.com/users/{user}"
         user_data = requests.get(url).json()
@@ -10,6 +10,6 @@ def f(x):
         data = user_data.keys()
         for i in data:
             if i in keys:
-                file.write(f"{i}:{user_data[i]}" + '\n')
-
+                print(file.write(f"{i}:{user_data[i]}" + '\n'), file.close)
+        
 f(x  = int(input("Введите любое число: ")))

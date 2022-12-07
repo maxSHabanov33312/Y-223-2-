@@ -1,11 +1,16 @@
-import requests
+#Вариант 7 Репазиторий - Firehol IP Lists, ссылка - https://github.com/firehol/blocklist-ipsets
 import json
-from pprint import pprint
-with open("C:\Users\USER\.vscode\extensions\shabanov","w") as file:
-    url = f"https://github.com/kubernetes/kubernetes"
-    data = requests.get(url).json()
-    sh = ['company', 'created_at', 'email', 'id', 'name', 'url']
-    data = data.keys()
-    for i in data:
-        if i in sh:
-            file.write(f"{i}:{data[i]}" + '\n')
+import requests
+from tkinter import*
+def f(x):
+    with open("C:\\Users\\USER\\.vscode\\extensions\\ms-python.python-2022.18.2\\languages\\shabanov", "w") as file:
+        user = "ktsaou"
+        url = f"https://api.github.com/users/{user}"
+        user_data = requests.get(url).json()
+        keys = ['id','url','name','company','email','created_at']
+        data = user_data.keys()
+        for i in data:
+            if i in keys:
+                file.write(f"{i}:{user_data[i]}" + '\n')
+
+f(x  = int(input("Введите любое число: ")))

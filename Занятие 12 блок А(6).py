@@ -6,13 +6,13 @@ def f(n, s):
         if n == 2:  
             x = print("YES")
         else:
-            if n <= 1 or n % 2 == 0:
+            if n % 2 == 0:
                 x = print("NO")
             else:
                 if s * s > n:
                     x = print("YES")
                 else:
-                    if (n % s) == 0:  
+                    if n % s == 0:  
                         x = print("NO")
                     else:  
                         x = f(n, s+2)

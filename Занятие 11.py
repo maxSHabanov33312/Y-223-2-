@@ -1,4 +1,4 @@
-#Вариант 7 Репазиторий - Firehol IP Lists, ссылка - https://github.com/firehol/blocklist-ipsets
+#Вариант 6 Репазиторий - Firehol IP Lists, ссылка - https://github.com/firehol/blocklist-ipsets
 import json
 import requests
 def f(x):
